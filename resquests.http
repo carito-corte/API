@@ -1,0 +1,25 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "nombre":"Andres ",
+    "apellido":"Melo",
+    "correo":"andres_melooo@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+
+###
+DELETE http://localhost:3000/api/users/62f57d8bce0a2c1a0a9cc08d HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/62f57c42393ad5a9c6e1207c HTTP/1.1
+Content-Type: application/json
+
+{
+  "nombre": "John",
+  "apellido": "Soto",
+  "correo": "johnsoto@email.com"
+}
